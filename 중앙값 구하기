@@ -1,0 +1,18 @@
+class Solution {
+    public int solution(int[] array) {
+    for(int i =0;i<array.length;i++)
+        {
+            for(int run=0;run<array.length;run++)
+            {
+                if(array[i]>=array[run])
+                { 
+                    int verl=0;
+                    verl=array[i];
+                    array[i]=array[run];
+                    array[run]=verl;
+                }
+            }
+        }
+    return array[array.length/2];
+    }
+}
