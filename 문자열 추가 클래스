@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.util.Arrays;
+ class Main {
+    public static void main(String[] args) {
+        hello2 h = new hello2();
+        String name[][] = {{"뒤를 조심해", "나는 감자!"}, {"나는 문어!", "아리아리"}};  // main 클래스
+
+        System.out.println(Arrays.toString(h.mama(name)[0]));
+        System.out.println(Arrays.toString(name[1]));
+
+
+    }
+}
+------------------------------------------------------------------------------------------
+ public class hello2  // 문자열 추가 클래스
+{
+ 
+  static String[][] mama(String[][] name)
+  {
+      for(int a=0;a<name.length;a++) {
+          for (int i = 0; i < name[a].length; i++) {
+              name[a][i] = name[a][i] + "-mama 함수 작동함-";
+
+          }
+      }
+
+    return name;
+  }
+
+
+
+}
