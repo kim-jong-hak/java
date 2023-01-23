@@ -1,0 +1,43 @@
+import java.io.*;
+
+import java.util.Arrays;
+ class Code_Text {
+
+
+     public static void main(String[] args) throws IOException {
+           /*  BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+
+             String s=input.readLine();
+             input.close();*/
+
+                valu val=new valu();
+                vava va=new vava();
+
+
+         System.out.println(val.name);
+         vava.tem(val);
+         System.out.println(val.name);
+        end(val);
+         System.out.println(val.name);
+         }
+         static void end(valu in)
+         {
+             in.name="마무리 하겠습니다.";
+         }
+
+
+
+ }
+ class valu {
+
+String name="첫번째 클래스";
+    
+
+ }
+ class vava{
+
+     static void tem(valu in)
+     {
+         in.name="두번째 클래스";
+     }
+ }
