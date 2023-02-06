@@ -1,0 +1,29 @@
+public class titi {
+    public static void main(String[] args) throws IOException {
+        int array[]=new int[10];
+        int count[]=new int[6];
+        int reunt[]=new int[10];
+
+        for(int i=0;i<array.length;i++) // 숫자 입력
+        {
+            array[i]=(int)(Math.random()*6);
+        }
+
+        // 카운팅 정렬
+        for(int i=0;i<array.length;i++)
+        {
+            count[array[i]]++;
+        }
+
+        for(int i=1;i<count.length;i++)
+        {
+            count[i]+=count[i-1];
+        }
+        for(int i=reunt.length-1;i>=0;i--)
+        {
+            count[array[i]]--;
+            reunt[count[array[i]]]=array[i];
+        }
+        System.out.println(Arrays.toString(reunt));
+    }
+}
